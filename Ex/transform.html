@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            width: 400px;
+        }
+        button {
+            position: absolute;
+            top: -5px;
+            left: 0;
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: red;
+            outline: none;
+        }
+        .bar {
+            height: 30px;
+            background-color: gray;
+        }
+        .move_to {
+            transform: translateX(100px) ;
+            transition: transform .3s;
+        }
+        .move_back {
+            transform: translateX(0px) ;
+            transition: transform .3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <button class="move_back" onclick="buttonClick(this)"></button> 
+       <div class="bar">abc</div>
+    </div>
+    <script>
+        var button = document.getElementsByTagName('button')[0];
+        function buttonClick(e) {
+            if (e.className === "move_back") {
+                e.className = 'move_to';
+            } else {
+                e.className = 'move_back';
+            } 
+        }
+    </script>
+</body>
+</html>
