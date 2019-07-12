@@ -3,6 +3,7 @@ import {baseUrl} from '../config/env';
 import {getStore} from '../config/mUtils';
 
 axios.defaults.baseURL = baseUrl;
+axios.defaults.cert
 
 /**
  * 获取用户信息
