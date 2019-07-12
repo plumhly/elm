@@ -29,7 +29,7 @@
         </section>
         <!-- <button class="login_button">登录</button> -->
         <div class="login_button" @click="login">登录</div>
-        <router-link class="password_reset" to="">重置密码？</router-link>
+        <router-link class="password_reset" to="/forget">重置密码？</router-link>
         <alert-view v-show="paramterEmpty" :content="alertTitle" @alertConfirm="paramterEmpty = false"></alert-view>
     </div>
 </template>

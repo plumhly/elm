@@ -1,7 +1,8 @@
 import App from '../app.vue';
 
 const home = () => import(/* webpackChunkName: "home" */ '../page/home/home.vue');
-const login = () => import(/* webpackChunName: "login" */ '../page/login/login');
+const login = () => import(/* webpackChunkName: "login" */ '../page/login/login');
+const forget = () => import(/* webpackChunkName: "forget" */ '../page/forget/forget');
 export default [
     {
         path: '/',
@@ -18,6 +19,10 @@ export default [
             {
                 path: '/login',
                 component: login
+            },
+            {
+                path: '/forget',
+                component: forget
             }
         ]
     }

@@ -39,5 +39,7 @@
     "webpack-hot-middleware": "^2.25.0",
     "webpack-merge": "^4.2.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "fastclick": "^1.0.6"
+  }
 }
