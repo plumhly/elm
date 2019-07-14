@@ -16,6 +16,10 @@ body, div, span, footer, header, nav, section, aside, article, ul, dl, dt, dd, l
     }
 }
 
+html {
+    touch-action: manipulation;
+}
+
 /*定义滚动条的宽高和背景*/
 ::-webkit-scrollbar {
     width: 0px;
